@@ -1,0 +1,1 @@
+CREATE VIEW source_view AS SELECT random_string(50) AS value FROM generate_series(1,10000);
