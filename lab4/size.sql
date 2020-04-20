@@ -1,0 +1,1 @@
+SELECT pg_size_pretty(pg_relation_size(class.oid)) FROM pg_class class WHERE relname LIKE 'vacuum_tbl';
