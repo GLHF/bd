@@ -16,12 +16,11 @@ BEGIN
             for y in 1..array_length(matrix1, 2)
                 loop
                     matrix1[x][y] = complex_sum(matrix1[x][y], matrix2[x][y]);
-                    RETURN matrix1;
                 end loop;
         end loop;
+    RETURN matrix1;
 END;
 $$ LANGUAGE plpgsql;
-
 
 
 CREATE AGGREGATE complex_sum_matrices(complex[][]) (
