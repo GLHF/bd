@@ -25,12 +25,12 @@ CREATE INDEX brin_table ON brin_table USING brin(name);
 
 insert into hash_table
 SELECT generate_series(1,100000) as a,
-       random() * 999999;
+       round(random() * 999999);
 
 insert into btree_table
 SELECT generate_series(1,100000) as a,
-       random() * 999999;
+       round(random() * 999999);
 
 insert into brin_table
 SELECT generate_series(1,100000) as a,
-       random() * 999999;
+       round(random() * 999999);
