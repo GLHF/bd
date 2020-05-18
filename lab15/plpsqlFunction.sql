@@ -3,7 +3,7 @@ $$
 DECLARE
         result RECORD;
 BEGIN
-    SELECT tbl.id, tbl.value INTO result FROM tbl WHERE tbl.id = $1;
+    SELECT tbl1.id, tbl1.value INTO result FROM tbl1 WHERE tbl1.id = $1;
     RETURN result;
 END
 $$ LANGUAGE plpgsql;

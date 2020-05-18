@@ -1,6 +1,6 @@
 CREATE OR REPLACE FUNCTION selectFunctionSQL(id int) RETURNS RECORD AS
 $$
-SELECT tbl.id, tbl.value
-FROM tbl
-WHERE tbl.id = $1;
+SELECT tbl2.id, tbl2.value
+FROM tbl2
+WHERE tbl2.id = $1;
 $$ LANGUAGE SQL;
