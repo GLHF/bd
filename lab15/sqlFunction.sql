@@ -1,0 +1,6 @@
+CREATE OR REPLACE FUNCTION selectFunctionSQL(id int) RETURNS RECORD AS
+$$
+SELECT id, value
+FROM tbl
+WHERE id = id;
+$$ LANGUAGE SQL;
