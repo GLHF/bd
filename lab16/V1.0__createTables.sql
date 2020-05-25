@@ -1,17 +1,17 @@
 
-CREATE TABLE tbl1
+CREATE TABLE warm1
 (
     id    int,
     value text
 );
 
-CREATE TABLE tbl2
+CREATE TABLE warm2
 (
     id    int,
     value text
 );
 
-CREATE TABLE tbl3
+CREATE TABLE warm3
 (
     id    int,
     value text

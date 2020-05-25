@@ -1,5 +1,5 @@
-CREATE EXTENSION pg_prewarm;
+CREATE EXTENSION IF NOT EXISTS pg_prewarm;
 
-SELECT pg_prewarm('tbl1');
-SELECT pg_prewarm('tbl2');
-SELECT pg_prewarm('tbl3');
+SELECT pg_prewarm('warm1');
+SELECT pg_prewarm('warm2');
+SELECT pg_prewarm('warm3');
